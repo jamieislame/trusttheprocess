@@ -1,0 +1,332 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:700" rel="stylesheet);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Roboto;
+}
+
+h1 {
+   font-size: 250%;
+    text-shadow: 3px 3px 30px white;
+}
+
+h2 {
+   position:absolute;
+   animation-duration: 5s;
+   animation-name: slideinn;
+   font-size:30px;
+   top:25%;
+    
+}
+h3{
+   position:absolute;
+   font-size:30px;
+   top:25%;
+    }
+#messenger {
+  position: absolute;
+  top:80%;
+  left:0%;
+  font-size: 100%;
+  position: relative;
+  width: 24em; 
+  margin: 0 auto; 
+  text-align: center;
+  white-space: nowrap;
+  
+
+    
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #FFFFFF;
+
+
+}
+
+
+.p1 {
+   font-size: 17px;
+  
+}
+
+#p2 {
+  font-size: 30;
+  line-height: 150%;
+  color: #FFFFFF;
+  
+
+}
+@keyframes slideinn {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#theimg {
+  position: absolute;
+  top: 40%;
+  left: 73%;
+  height: 40%;
+  padding: 10px;
+  border-radius: 5px;
+  animation: slideinn 6s;
+ 
+ 
+}
+
+@keyframes slideinn {
+  from {
+    margin-left: 100%;
+     
+  }
+
+  to {
+    margin-left: 0%;
+    
+  }
+}
+
+
+/*#theimg:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}*/
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(4deg);
+  padding: 10px;
+  border-radius: 5px;
+ 
+ 
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+    width: 50%;
+    padding: 5%;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #ffffff;
+  
+}
+
+.text{
+  font:'Noto Serif', serif;
+
+}
+
+#title {
+  background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/p1639ay-goodss-160930.jpg");
+  z-index:2;
+ 
+}
+
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+
+#slide1:before {
+  background-image: url("https://s18.postimg.cc/tyggmcd6h/fingers_touching2.jpg");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide2 {
+  background-image: url("https://s18.postimg.cc/73i5xrc55/black.png");
+  z-index:2;
+}
+
+#slide3:before {
+  background-image: url("https://s18.postimg.cc/49f0k1mqx/roman.png");
+  transform: translateZ(-1px) scale(2);
+   animation-duration: 5s;
+   animation-name: slidein;
+}
+
+#slide4:before {
+  background-image: url("https://s31.postimg.cc/oc86hy563/cwe.png");
+  transform: translateZ(-1px) scale(2);
+  
+}
+
+#slide5 {
+  background-image: url("https://s18.postimg.cc/73i5xrc55/black.png");
+  z-index:2;
+  }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#slide4 {
+  
+}
+
+.trust-process {
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(50px);}
+    100% {transform: translateY(0px);}
+}
+
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 30em;}
+}
+
+
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:yellow; }
+a:hover, a:active { text-decoration: none; color:yellow }
+
+
+
+.buttons {
+  position: absolute;
+  margin-left:-2%;
+  top:60%;
+  border: 4px solid;
+  color:  black;
+  background: white;
+  font-family:  Roboto;
+  font-weight: bold;
+  font-size: 1em;
+  box-shadow: 1px 1px 8px #888888;
+  
+  
+}
+
+#quotesBox {
+  position: relative;
+  left:-43%;
+  font-weight: 300;
+  text-align: center;
+  font-size: 30px;
+  font-family: Noto Serif;
+  font-weight: bold;
+  text-shadow: 2px 3px 10px #888888;
+ 
+}
+
+
+#theimg1 {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  height: 30%;
+  padding: 10px;
+  border-radius: 5px;
+ 
+ 
+}
+
+#theimg2 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  height: 30%;
+  padding: 10px;
+  border-radius: 5px;
+ 
+ 
+}
+
+#theimg3 {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  height: 30%;
+  padding: 10px;
+  border-radius: 5px;
+ 
+ 
+}
+
+
+
+
